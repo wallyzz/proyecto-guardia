@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* --- HEADER --- */
@@ -11,23 +12,27 @@ ul li {
     list-style: none;
     text-decoration: none;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     color: #EFEFEF;
 }
-header{
+
+header {
     background-color: #3C3C35;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav{
+
+header nav {
     text-shadow: 1px 1px 0px grey;
     width: 50%;
     font-size: 1.7rem;
     font-weight: bold
 }
-header ul{ 
+
+header ul {
     display: flex;
     justify-content: space-around;
 }
@@ -36,80 +41,198 @@ header ul{
 
 /* --- BODY INDEX --- */
 
-body{
-    background-color:#EFEFEF;
+body {
+    background-color: #EFEFEF;
 }
-.logo-frive{
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.logo-frive {
     width: 160px;
     height: 160px;
     border-radius: 40px;
     position: relative;
 }
-.img-oferta{
+
+.img-oferta {
+    width: 500px;
+    height: 500px;
+    grid-area: imagen1;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.img-oferta2 {
+    width: 500px;
+    height: 500px;
+    grid-area: imagen2;
+    margin-top: 50px;
+}
+
+.img-ingresos {
     width: 400px;
-    height: 400px;
+    height: 500px;
+    grid-area: imagen3;
 }
-.img-ingresos{
-    width: 200px;
-    height: 200px;
+
+.img-ingresos2 {
+    width: 600px;
+    height: 500px;
+    grid-area: imagen4;
+    position: relative;
+    right: 70px;
 }
-.titulo{
-    font-size: 3rem;
+
+.titulo {
+    font-size: 6rem;
+    grid-area: tituloingresos;
+    text-align: center;
+
 }
-.titulo-con-sombra{
-    font-size: 3rem;
+
+.titulo-con-sombra {
+    font-size: 6rem;
     text-shadow: 2px 2px 0px black;
+    grid-area: titulo;
+    text-align: center;
 }
-.texto-con-sombra{
+
+.texto-con-sombra2 {
+    font-size: 2rem;
     text-shadow: 2px 2px 0px black;
+    grid-area: texto1;
+    margin-top: 50px;
 }
-.logo-footer{
+
+.texto-con-sombra3 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 0px black;
+    grid-area: texto2;
+}
+
+.logo-footer {
     width: 50px;
     height: 50px;
 }
-.letras-grandes{
+
+.letras-grandes1 {
     font-size: 2rem;
     font-weight: bold;
+    grid-area: escritoriof3;
+    grid-column: span 2;
+    position: relative;
+    right: 120px
 }
-.fondo-oferta{
-    background-color: #5A4AE3;
+
+.letras-grandes2 {
+    font-size: 2rem;
+    font-weight: bold;
+    grid-area: cajoneraf;
+}
+
+.fondo--oferta{
     display: flex;
-    flex-direction: column;
-    padding: 15px;
-    border-radius: 20px;  
-    /* box-shadow: 2px 2px 0px black;   */
+    justify-content: center;
 }
-.texto-blanco{
+
+.fondo-oferta {
+    background-color: #5A4AE3;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 10% 5% 65% 20%;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "texto1 texto1 texto1"
+        "imagen1 none imagen2"
+        "texto2 texto2 texto2";
+    padding: 15px;
+    border-radius: 20px;
+    width: 1600px;
+    height: 900px;
+    margin: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.fondo-nuevos-ingresos {
+    background-color: #D9D9D9;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 15% 60% 5% 20%;
+    grid-template-areas:
+        "tituloingresos tituloingresos tituloingresos"
+        "imagen3 none imagen4"
+        "escritoriof3 no cajoneraf"
+        "bon boton blanco";
+    padding: 15px;
+    border-radius: 20px;
+    width: 1600px;
+    height: 900px;
+    margin: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.boton {
+    grid-area: boton;
+    border: solid 2px black;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding-top: 7px;
+    text-align: center;
+    color: #EFEFEF;
+    background-color: #5A4AE3;
+    transition: 0.7s
+}
+
+.boton:hover {
+    border: solid 2px black;
+    background-color: #EFEFEF;
+    color: #5A4AE3;
+}
+
+.texto-blanco {
     color: #EFEFEF;
     text-align: center;
 }
-.fondo-nuevos-ingresos{
-    background-color: #D9D9D9;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-}
+
 
 
 /* --- BODY INDEX --- */
 
 /* --- PRODUCTOS --- */
 
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-content: space-between;
 }
-article{ 
+
+article {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-.caja{
-    border:solid 5px #5A4AE3;
+
+.caja {
+    border: solid 5px #5A4AE3;
     border-radius: 40px;
     width: 500px;
     height: 500px;
@@ -117,29 +240,34 @@ article{
     margin: 20px 20px;
     transition: 0.7s;
 }
-.caja:hover{
+
+.caja:hover {
     border: solid 5px #5A4AE3;
     background-color: black;
     color: #EFEFEF;
 }
-.imagen-producto{
+
+.imagen-producto {
     width: 300px;
     height: 300px;
     border-radius: 30px;
 }
-.texto-cajas-productos{
+
+.texto-cajas-productos {
     color: #EFEFEF;
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 1px 1px 0px black;
     margin: 20px;
 }
-.texto-precio{
+
+.texto-precio {
     font-size: 1.5rem;
     color: #EFEFEF;
 }
-.btn{
-    border:solid 2px black;
+
+.btn {
+    border: solid 2px black;
     border-radius: 20px;
     font-size: 1.3rem;
     font-weight: bold;
@@ -148,7 +276,8 @@ article{
     padding: 5px 15px;
     transition: 0.7s
 }
-.btn:hover{
+
+.btn:hover {
     border: solid 2px black;
     background-color: #EFEFEF;
     color: #5A4AE3;
@@ -158,26 +287,28 @@ article{
 
 /* --- ACCESORIOS --- */
 
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-content: space-between;
 }
-article{ 
+
+article {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.imagen-accesorio{
+.imagen-accesorio {
     width: 300px;
     height: 300px;
     border-radius: 30px;
 }
-.texto-cajas-accesorio{
+
+.texto-cajas-accesorio {
     color: #EFEFEF;
     font-size: 2rem;
     font-weight: bold;
@@ -190,37 +321,42 @@ article{
 
 /* --- NOSOTROS --- */
 
-.main-nosotros{
+.main-nosotros {
     display: flex;
 }
-.nosotros-parrafo{
+
+.nosotros-parrafo {
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
 }
 
-.main-p-nosotros{
+.main-p-nosotros {
     width: 700px;
     height: 450px;
     font-weight: 520;
     font-size: 30px;
-    margin-top: 150px ;
+    margin-top: 150px;
     margin-left: 150px;
     margin-bottom: 50px;
+    text-align: center;
 }
-.logo-frive-nosotros{
+
+.logo-frive-nosotros {
     width: 160px;
     height: 160px;
     border-radius: 40px;
     margin-left: 70px;
 }
-.propiedades-nosotros{
+
+.propiedades-nosotros {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.imagenes-nosotros{
+
+.imagenes-nosotros {
     width: 650px;
     height: 400px;
     margin: 20px;
@@ -233,31 +369,51 @@ article{
 
 /* --- SOPORTE --- */
 
-.main-soporte{
+.main-soporte {
     display: flex;
     justify-content: center;
     margin: 100px 0;
 }
-.caja-soporte{
-    width: 1500px;
-    height: 800px;
+
+.main-content{
+    width: 1300px;
+    height: 750px;
+    background-color: #5A4AE3;
+    border-radius: 40px;
+    padding: 10px;
+}
+.conteiner-formulario textarea{
+    resize: none;
+    display: flex; 
+    border-radius: 10px;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 200px;
+}
+.form-inputs1{
     display: flex;
     flex-direction: column;
-    background-color: #5A4AE3;
-    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: grey 2px 1px 1px;
 }
-.interior-caja-soporte{
-    color: black;
-    margin: 50px;
-    background-color: white;
-    width: 500px;
+.form-inputs1 input{
+    padding: 10px;
+    width: 90%;
+    border: solid black 2px;
+    border-radius: 10px;
+    font-size: 1.3rem;
 }
-.interior-caja-soporte-mensaje{
-    color: black;
-    margin: 50px;
-    background-color: white;
-    width: 1000px;
-    height: 500px;
+.form-inputs3 input{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+    font-size: 1.2rem;
+}
+.form-inputs3{
+    margin-left: 83%;
 }
 
 
@@ -267,20 +423,236 @@ article{
 
 /* --- FOOTER --- */
 
-footer div a{
+footer div a {
     background-color: #525456;
     margin: 0px 60px;
 
 }
-.socials{
+
+.socials {
     display: flex;
     justify-content: center;
     background-color: #525456;
     padding: 30px;
 }
-footer article{
+
+footer article {
     display: flex;
     justify-content: center;
     background-color: #3C3C35;
     color: #EFEFEF;
+}
+
+.texto-footer {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.socials a i{
+    font-size: 3rem;
+    color: white;
+}
+/* --- RESPONSIVE --- */
+/* --- RESPONSIVE --- */
+@media (max-width:1024px) {
+    .logo-frive {
+        width: 80px;
+        height: 80px;
+    }
+
+    ul li a {
+        font-size: 1.2rem;
+    }
+
+
+    .fondo-oferta {
+        width: 800px;
+        height: 600px;
+        display: grid;
+        row-gap: 0;
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: 10% 10% 60% 20%;
+    }
+
+    .img-oferta {
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+        position: relative;
+        left: 50px;
+    }
+
+    .img-oferta2 {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .texto-con-sombra2 {
+        margin-top: 70px;
+    }
+
+    .fondo-nuevos-ingresos {
+        width: 800px;
+        height: 700px;
+        margin: 10px;
+    }
+
+    .titulo {
+        font-size: 3.4rem;
+    }
+
+    .img-ingresos {
+        width: 240px;
+        height: 300px;
+
+    }
+
+    .img-ingresos2 {
+        width: 400px;
+        height: 300px;
+    }
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+
+    body {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+    }
+}
+
+@media (max-width:480px) {
+    .logo-frive {
+        width: 50px;
+        height: 50px;
+    }
+
+    header nav {
+        width: 90%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li a {
+        font-size: 0.8rem;
+    }
+
+    .fondo-oferta {
+        width: 400px;
+        height: 400px;
+        display: grid;
+        row-gap: 0;
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: 10% 10% 60% 20%;
+    }
+
+    .img-oferta {
+        width: 150px;
+        height: 150px;
+        margin-left: 0;
+        position: relative;
+        left: 15px;
+    }
+
+    .img-oferta2 {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        right: 15px;
+    }
+
+    .titulo-con-sombra {
+        font-size: 4rem;
+    }
+
+    .texto-con-sombra2 {
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
+
+    .texto-con-sombra3 {
+        font-size: 1.2rem;
+    }
+
+    .fondo-nuevos-ingresos {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        margin-top: 15px;
+    }
+
+    .img-ingresos {
+        width: 100px;
+        height: 140px;
+
+    }
+
+    .img-ingresos2 {
+        width: 200px;
+        height: 150px;
+        position: relative;
+        right: 25px;
+    }
+
+    .letras-grandes1 {
+        font-size: 1.6rem;
+        position: relative;
+        right: 0;
+    }
+
+    .letras-grandes2 {
+        font-size: 1.6rem;
+    }
+
+    .boton {
+        grid-area: boton;
+        border: solid 2px black;
+        border-radius: 20px;
+        width: 100px;
+        height: 40px;
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 12px;
+        /* text-align: center; */
+        color: #EFEFEF;
+        background-color: #5A4AE3;
+        transition: 0.7s;
+    }
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+
+    body {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+    }
 }

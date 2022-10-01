@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>soporte</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <header>
         <a href="../index.html">
-            <img class=logo-frive src="../imagenes/logofrive.png" alt="logo frive"/>
+            <img class=logo-frive src="../imagenes/logofrive.png" alt="logo frive" />
         </a>
         <nav>
             <ul>
@@ -22,10 +24,30 @@
         </nav>
     </header>
     <main class="main-soporte">
-        <div class="caja-soporte">
-            <h2 class="interior-caja-soporte">Nombre:</h2>
-            <h2 class="interior-caja-soporte">Email:</h2>
-            <h2 class="interior-caja-soporte-mensaje">Tu Mensaje:</h2>
+        <div class="main-content">
+            <div class="conteiner-formulario">
+                <form id="form" method="get">
+                    <div class="form-inputs1">
+                        <label for="Name">Nombre </label>
+                        <input type="text" name="Name" placeholder="Ingresar datos">
+                    </div>
+                    <div class="form-inputs1">
+                        <label for="Telefono">Telefono </label>
+                        <input type="text" name="Telefono" placeholder="Ingresar datos">
+                    </div>
+                    <div class="form-inputs1">
+                        <label for="Email">Email </label>
+                        <input type="text" name="Email" placeholder="Ingresar datos">
+                    </div>
+                    <div class="form-inputs1">
+                        <label for="Comentario">Comentario </label>
+                        <textarea name="Comentario" id="comentario" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-inputs3">
+                        <input type="submit" id="input-form" value="Enviar formulario">
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
@@ -36,10 +58,11 @@
             <a href="https://www.facebook.com/" target="_blank">
                 <img class=logo-footer src="../imagenes/footer/logofacebook.png" alt="logo facebook">
             </a>
-            </div>
+        </div>
         <article>
             © 2022 Frive Co. All rights reserved.
         </article>
     </footer>
 </body>
+
 </html>
