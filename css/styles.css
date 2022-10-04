@@ -277,7 +277,7 @@ article {
     color: #EFEFEF;
 }
 
-.btn {
+.botn {
     border: solid 2px black;
     border-radius: 20px;
     font-size: 1.3rem;
@@ -288,7 +288,7 @@ article {
     transition: 0.7s
 }
 
-.btn:hover {
+.botn:hover {
     border: solid 2px black;
     background-color: #EFEFEF;
     color: #5A4AE3;
@@ -565,7 +565,7 @@ footer article {
         color: #EFEFEF;
     }
     
-    .btn {
+    .botn {
         border: solid 2px black;
         border-radius: 20px;
         font-size: 1.3rem;
@@ -576,7 +576,7 @@ footer article {
         transition: 0.7s
     }
     
-    .btn:hover {
+    .botn:hover {
         border: solid 2px black;
         background-color: #EFEFEF;
         color: #5A4AE3;
@@ -742,7 +742,7 @@ footer article {
         color: #EFEFEF;
     }
     
-    .btn {
+    .botn {
         border: solid 2px black;
         border-radius: 20px;
         font-size: 1.3rem;
@@ -753,7 +753,7 @@ footer article {
         transition: 0.7s
     }
     
-    .btn:hover {
+    .botn:hover {
         border: solid 2px black;
         background-color: #EFEFEF;
         color: #5A4AE3;
