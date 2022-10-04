@@ -4,9 +4,16 @@
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
 }
+a:hover {
+    color: var();
+}
 
 /* --- HEADER --- */
 
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
 ul li {
     display: flex;
     list-style: none;
@@ -16,6 +23,10 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #EFEFEF;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color: #dbdbdb;
 }
 
 header {
@@ -216,7 +227,7 @@ body {
 
 /* --- PRODUCTOS --- */
 
-section {
+.contenedor-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -454,6 +465,8 @@ footer article {
 }
 /* --- RESPONSIVE --- */
 /* --- RESPONSIVE --- */
+
+/* --- INDEX --- */
 @media (max-width:1024px) {
     .logo-frive {
         width: 80px;
@@ -512,6 +525,62 @@ footer article {
         width: 400px;
         height: 300px;
     }
+
+    /* --- INDEX --- */
+
+    /* --- PRODUCTOS --- */
+
+    .caja {
+        border: solid 5px #5A4AE3;
+        border-radius: 40px;
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        margin: 20px 20px;
+        transition: 0.7s;
+    }
+    
+    .caja:hover {
+        border: solid 5px #5A4AE3;
+        background-color: black;
+        color: #EFEFEF;
+    }
+    
+    .imagen-producto {
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+    }
+    
+    .texto-cajas-productos {
+        color: #EFEFEF;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px black;
+        margin: 20px;
+    }
+    
+    .texto-precio {
+        font-size: 1.5rem;
+        color: #EFEFEF;
+    }
+    
+    .btn {
+        border: solid 2px black;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #EFEFEF;
+        background-color: #5A4AE3;
+        padding: 5px 15px;
+        transition: 0.7s
+    }
+    
+    .btn:hover {
+        border: solid 2px black;
+        background-color: #EFEFEF;
+        color: #5A4AE3;
+    }
     html {
         min-height: 100%;
         position: relative;
@@ -548,7 +617,7 @@ footer article {
     }
 
     ul li a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .fondo-oferta {
@@ -619,7 +688,7 @@ footer article {
     }
 
     .letras-grandes2 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .boton {
@@ -631,12 +700,68 @@ footer article {
         margin: 0;
         font-size: 0.8rem;
         font-weight: bold;
-        padding: 12px;
+        padding: 7px;
         /* text-align: center; */
         color: #EFEFEF;
         background-color: #5A4AE3;
         transition: 0.7s;
     }
+
+    .caja {
+        border: solid 5px #5A4AE3;
+        border-radius: 40px;
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        margin: 20px 20px;
+        transition: 0.7s;
+    }
+    
+    .caja:hover {
+        border: solid 5px #5A4AE3;
+        background-color: black;
+        color: #EFEFEF;
+    }
+    
+    .imagen-producto {
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+    }
+    
+    .texto-cajas-productos {
+        color: #EFEFEF;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px black;
+        margin: 20px;
+    }
+    
+    .texto-precio {
+        font-size: 1.5rem;
+        color: #EFEFEF;
+    }
+    
+    .btn {
+        border: solid 2px black;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #EFEFEF;
+        background-color: #5A4AE3;
+        padding: 5px 15px;
+        transition: 0.7s
+    }
+    
+    .btn:hover {
+        border: solid 2px black;
+        background-color: #EFEFEF;
+        color: #5A4AE3;
+    }
+    .texto-footer{
+        font-size: 1rem;
+    }
+
     html {
         min-height: 100%;
         position: relative;
