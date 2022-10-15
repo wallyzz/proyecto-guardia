@@ -267,32 +267,33 @@ article {
     width: 700px;
     height: 450px;
     font-weight: 520;
-    font-size: 23px;
-    margin-top: 150px;
-    margin-left: 150px;
-    margin-bottom: 50px;
+    font-size: 1.4rem;
     text-align: center;
+    margin: 10px;
+    padding: 30px;
 }
 
 .logo-frive-nosotros {
     width: 160px;
     height: 160px;
     border-radius: 40px;
-    margin-left: 70px;
 }
 
 .propiedades-nosotros {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.propiedades-nosotros img{
+    margin: 10px;
 }
 
 .imagenes-nosotros {
-    width: 650px;
-    height: 400px;
-    margin: 20px;
-    margin-bottom: 40px;
-    margin-left: 230px;
+    width: 450px;
+    height: 300px;
     border-radius: 40px;
 }
 
