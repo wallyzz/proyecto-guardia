@@ -29,18 +29,30 @@ ul li a:hover{
     color: #dbdbdb;
 }
 
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link:hover{
+    color: #dbdbdb;
+}
+
 header {
     background-color: #3C3C35;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: solid 5px #5A4AE3;
 }
 
 header nav {
     text-shadow: 1px 1px 0px grey;
-    width: 50%;
-    font-size: 1.7rem;
-    font-weight: bold
+    width: 20%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
 }
 
 header ul {
@@ -51,8 +63,8 @@ header ul {
 /* --- HEADER --- */
 
 .logo-frive {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     border-radius: 40px;
     position: relative;
 }
@@ -64,6 +76,7 @@ body {
 }
 
 .contenedor-index{
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +125,15 @@ body {
     margin: 10px;
 }
 
+.box-nuevosingresos h2{
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
 .ingresos-contenido{
     display: flex;
     width: 100%;
@@ -124,12 +146,31 @@ body {
     align-items: center;
 }
 
+.ingresos-imagenes p{
+    position: relative;
+    top: 60px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.box1 p{
+    position: relative;
+    top: 15px;
+}
+
 .box-nuevosingresos button{
     padding: 10px;
     border-radius: 15px;
     font-size: bold;
-    background-color:#525456;
+    background-color: #5A4AE3;
     color: #EFEFEF;
+    border: solid black 1px;
+    transition: 0.2s;
+}
+
+.box-nuevosingresos button:hover{
+    background-color: white;
+    color: #5A4AE3;
 }
 
 .box-nuevosingresos p{
@@ -312,8 +353,8 @@ article {
 }
 
 .main-content{
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
     background-color: #5A4AE3;
     border-radius: 40px;
     padding: 10px;
@@ -325,31 +366,41 @@ article {
     font-size: 1.3rem;
     width: 100%;
     height: 200px;
+    border: solid black 1px;
 }
 .form-inputs1{
     display: flex;
     flex-direction: column;
     padding: 20px;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-shadow: grey 2px 1px 1px;
 }
 .form-inputs1 input{
     padding: 10px;
     width: 90%;
-    border: solid black 2px;
+    border: solid black 1px;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .form-inputs3 input{
-    padding: 10px;
-    border-radius: 10px;
-    border: solid black 2px;
-    font-size: 1.2rem;
+    padding: 7px;
+    border-radius: 20px;
+    border: solid black 1px;
+    font-size: 1rem;
+    background-color: white;
+    transition: 0.2s;
 }
+.form-inputs3 input:hover{
+    border: solid black 1px;
+    background-color: #1c1742;
+    color: white;
+}
+
 .form-inputs3{
-    margin-left: 83%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -369,7 +420,7 @@ footer div a {
     display: flex;
     justify-content: center;
     background-color: #525456;
-    padding: 30px;
+    padding: 20px;
 }
 
 footer article {
@@ -380,13 +431,18 @@ footer article {
 }
 
 .texto-footer {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 1.5px;
 }
 .socials a i{
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
+    transition: 0.2s;
+}
+
+.socials a i:hover{
+    color:#5A4AE3;
 }
 /* --- RESPONSIVE --- */
 
@@ -450,6 +506,27 @@ footer article {
 
 .box1{
     left: 0;
+}
+
+.box-nuevosingresos h2{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.ingresos-imagenes p{
+    top: 0;
+    background-color: white;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 1rem;
+}
+.box1 p{
+    top: 0;
 }
 
 /* --- INDEX --- */
@@ -529,6 +606,7 @@ footer article {
     .main-p-nosotros{
         margin: 0;
         width: 90%;
+        height: auto;
         font-size: 1.2rem;
         margin: 10px;
     }
@@ -555,7 +633,18 @@ footer article {
     /* --- SOPORTE --- */
 
     .form-inputs3{
-        margin-left: 30%;
+        justify-content: center;
+    }
+
+    .main-soporte{
+        margin: 50px 0;
+    }
+    .main-content{
+        width: 90%;
+        height: 90%;
+        background-color: #5A4AE3;
+        border-radius: 40px;
+        padding: 10px;
     }
 
     /* --- SOPORTE --- */
