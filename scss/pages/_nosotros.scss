@@ -1,0 +1,92 @@
+
+.main-nosotros {
+    display: flex;
+    h2{
+        display: none;
+    }
+}
+
+.nosotros-parrafo {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-p-nosotros {
+    width: 700px;
+    height: 450px;
+    font-weight: 520;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+}
+
+.logo-frive-nosotros {
+    width: 160px;
+    height: 160px;
+    border-radius: 40px;
+}
+
+.propiedades-nosotros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    img{
+        margin: 10px;
+    }
+}
+.imagenes-nosotros {
+    width: 450px;
+    height: 300px;
+    border-radius: 40px;
+}
+.propiedades-nosotros-responsive {
+    display: none;
+}
+@media (max-width:480px) {
+    .main-nosotros {
+        align-items: center;
+        flex-direction: column;
+        h2{
+            display: flex;
+            background-color: #5A4AE3;
+            width: 100%;
+            justify-content: center;
+            padding: 30px;
+            font-size: 3rem;
+            color: #EFEFEF;
+            font-weight: 800;
+        }
+    }
+    .main-p-nosotros {
+        margin: 0;
+        width: 90%;
+        height: auto;
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+
+    .propiedades-nosotros-responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenes-nosotros {
+        width: 300px;
+        height: 210px;
+        margin: 10px;
+    }
+
+    .logo-frive-nosotros {
+        margin: 10px;
+    }
+
+    .propiedades-nosotros {
+        display: none;
+    }
+}
+

@@ -1,0 +1,50 @@
+.botn {
+    border: solid 2px black;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #EFEFEF;
+    background-color: #5A4AE3;
+    padding: 5px 15px;
+    transition: 0.7s;
+    &:hover{
+        border: solid 2px black;
+        background-color: #EFEFEF;
+        color: #5A4AE3;
+    }
+    .form-inputs3 {
+        display: flex;
+        justify-content: flex-end;
+        input{
+            padding: 7px;
+            border-radius: 20px;
+            border: solid black 1px;
+            font-size: 1rem;
+            background-color: white;
+            transition: 0.2s;
+            &:hover{
+                border: solid black 1px;
+                background-color: #1c1742;
+                color: white;
+            }
+        }
+    }
+}
+@media (max-width:480px) {
+
+    .botn {
+        border: solid 2px black;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #EFEFEF;
+        background-color: #5A4AE3;
+        padding: 5px 15px;
+        transition: 0.7s;
+        &:hover{ 
+            border: solid 2px black;
+            background-color: #EFEFEF;
+            color: #5A4AE3;
+        }
+    }
+}
