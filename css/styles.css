@@ -133,24 +133,6 @@ footer article {
   font-size: 1rem;
 }
 
-.form-inputs3 {
-  display: flex;
-  justify-content: flex-end;
-}
-.form-inputs3 input {
-  padding: 7px;
-  border-radius: 20px;
-  border: solid black 1px;
-  font-size: 1rem;
-  background-color: white;
-  transition: 0.2s;
-}
-.form-inputs3 input:hover {
-  border: solid black 1px;
-  background-color: #1c1742;
-  color: white;
-}
-
 @media (max-width: 480px) {
   .form-inputs3 {
     justify-content: center;
@@ -421,20 +403,6 @@ article {
   color: #EFEFEF;
 }
 
-@media (max-width: 480px) {
-  .imagen-producto {
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
-  }
-  .texto-cajas-productos {
-    color: #EFEFEF;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 0px black;
-    margin: 20px;
-  }
-}
 .contenedor-section {
   display: flex;
   flex-wrap: wrap;
@@ -506,7 +474,7 @@ article {
     height: 200px;
     border-radius: 30px;
   }
-  .texto-caja-accesorio {
+  .texto-cajas-accesorio {
     color: #EFEFEF;
     font-size: 2rem;
     font-weight: bold;
