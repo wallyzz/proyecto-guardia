@@ -133,6 +133,24 @@ footer article {
   font-size: 1rem;
 }
 
+.form-inputs3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-inputs3 input {
+  padding: 7px;
+  border-radius: 20px;
+  border: solid black 1px;
+  font-size: 1rem;
+  background-color: white;
+  transition: 0.2s;
+}
+.form-inputs3 input:hover {
+  border: solid black 1px;
+  background-color: #1c1742;
+  color: white;
+}
+
 @media (max-width: 480px) {
   .form-inputs3 {
     justify-content: center;
@@ -411,11 +429,12 @@ article {
   align-content: space-between;
 }
 
-article {
+section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
 }
 
 .caja {
@@ -434,13 +453,13 @@ article {
   color: #EFEFEF;
 }
 
-.imagen-producto {
+.imagen-accesorio {
   width: 300px;
   height: 300px;
   border-radius: 30px;
 }
 
-.texto-cajas-productos {
+.texto-cajas-accesorio {
   color: #EFEFEF;
   font-size: 2rem;
   font-weight: bold;

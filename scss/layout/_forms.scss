@@ -15,7 +15,23 @@
         font-size: 1rem;
     }
 }
-
+.form-inputs3 {
+    display: flex;
+    justify-content: flex-end;
+    input{
+        padding: 7px;
+        border-radius: 20px;
+        border: solid black 1px;
+        font-size: 1rem;
+        background-color: white;
+        transition: 0.2s;
+        &:hover{
+            border: solid black 1px;
+            background-color: #1c1742;
+            color: white;
+        }
+    }
+}
 
 @media (max-width:480px) {
 
